@@ -18,19 +18,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.d-flex {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Center the main card vertically */
-}
+<style lang="scss" scoped>
+@import './styles/app.scss';
 </style>
