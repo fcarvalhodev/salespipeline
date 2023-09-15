@@ -1,9 +1,7 @@
 <template>
   <div id="app" :style="{ backgroundColor: '#f0f3f6' }">
     <HeaderComponent />
-    <div class="d-flex">
-      <MainCardComponent />
-    </div>
+    <MainCardComponent />
   </div>
 </template>
 
@@ -32,7 +30,7 @@ export default {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 1cm;
+  align-items: center;
+  /* Center the main card vertically */
 }
 </style>

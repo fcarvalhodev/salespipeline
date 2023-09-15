@@ -3,11 +3,11 @@
     <div class="d-flex justify-content-center button-container">
       <div class="button-wrapper">
         <button @click="selectButton(1)" :style="buttonStyle(1)">1</button>
-        <span>Phrase for 1</span>
+        <span class="small-phrase">Sales Pipeline Settings</span>
       </div>
       <div class="button-wrapper">
         <button @click="selectButton(2)" :style="buttonStyle(2)">2</button>
-        <span>Phrase for 2</span>
+        <span class="small-phrase">Opportunity Details Settings</span>
       </div>
     </div>
   </div>
@@ -48,16 +48,17 @@ export default {
 
 
 button {
-  width: 40px;
-  height: 40px;
+  width: 4em;
+  height: 4em;
   border: 2px solid #3a3e4e;
-  border-radius: 12px !important;  /* Explicitly set rounded corners */
+  border-radius: 12px !important;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .small-phrase {
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: bold;
 }
 </style>
