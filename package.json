@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "cypress": "cypress open",
+    "test": "concurrently \"npm run serve\" \"npm run cypress\""
   },
   "dependencies": {
     "bootstrap": "^5.3.1",
@@ -18,7 +20,10 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "concurrently": "^8.2.1",
+    "cypress": "^13.2.0",
     "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.14.0",
     "eslint-plugin-vue": "^8.0.3",
     "node-sass": "^9.0.0",
     "sass": "^1.67.0",
@@ -27,7 +32,8 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "cypress/globals": true
     },
     "extends": [
       "plugin:vue/vue3-essential",
@@ -36,6 +42,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
+    "plugins": [
+      "cypress"
+    ],
     "rules": {}
   },
   "browserslist": [
