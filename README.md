@@ -4,6 +4,18 @@
 
 This project is a Vue.js application that allows users to configure their sales pipeline settings. It includes various components like headers, checkboxes, and columns to provide a complete user interface for managing sales pipeline types.
 
+## Best Engineering Practices
+
+- **Componentization**: The UI is broken down into reusable Vue components.
+- **Prop Driven**: Components are designed to be flexible and configurable via props.
+- **Scoped CSS**: Scoped styling to prevent CSS leakage.
+- **BEM Naming Convention**: Utilizes BEM for structured and scalable CSS.
+- **Responsive Design**: The application is responsive and works well on various screen sizes.
+- **Code Splitting**: Lazy loading and asynchronous components for better performance.
+- **Automated Testing**: End-to-end tests using Cypress for each component.
+- **Version Control**: Git is used for version control, with a clean commit history and meaningful commit messages.
+
+
 ## Features
 
 - **Header Component**: Allows navigation and provides search functionality.
