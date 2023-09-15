@@ -47,7 +47,7 @@ This will start the development server, and the application will be accessible a
 This project uses Cypress for end-to-end testing. To run the tests, execute the following command:
 
 ```bash
-npm run test:e2e
+npm run test
 ```
 
 Make sure your application is running when you execute the tests.
